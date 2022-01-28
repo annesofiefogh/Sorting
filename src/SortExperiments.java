@@ -23,7 +23,8 @@ public class SortExperiments {
         int[] liste = {8, 5, 2, 7, 9, 2, 1, 0, 3};
 
         System.out.println("Unsorted: " + Arrays.toString(liste));
-        QuickSortInteger.sort(liste);
+        //Arrays har en indbygget sort-metode i sig
+        Arrays.sort(liste);
         System.out.println("Sorted: " + Arrays.toString(liste));
     }
 
@@ -31,7 +32,7 @@ public class SortExperiments {
         String[] words = {"bonde", "gård", "abe", "kat", "hund", "ko", "and" };
 
         System.out.println("Unsorted words " + Arrays.toString(words));
-        QuickSortString.sort(words);
+        Arrays.sort(words);
         System.out.println("Sorted words " + Arrays.toString(words));
     }
 

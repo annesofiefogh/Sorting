@@ -9,8 +9,10 @@ public class BallSorter {
         }
 
         System.out.println("Før sortering: " + Arrays.toString(balls));
-//        Arrays.sort(balls);
-//        System.out.println("Efter sortering: " + Arrays.toString(balls));
+        //Kan bruge Arrays.sort is stedet for Quicksort da Comparable er blevet implementeret i klassen Ball
+        //Kan lade sig gøre fordi comparable indeholder arrays.sort
+        Arrays.sort(balls);
+        System.out.println("Efter sortering: " + Arrays.toString(balls));
     }
 
     public static void main(String[] args) {

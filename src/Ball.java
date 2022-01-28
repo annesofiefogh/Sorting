@@ -1,4 +1,4 @@
-public class Ball {
+public class Ball implements Comparable {
     private int brightness;
 
     public Ball() {
@@ -14,6 +14,16 @@ public class Ball {
             return true;
         } else {
             return false;
+        }
+    }
+
+    //når man skriver metodens signatur skal den abstrakte metode ind som parameter?!
+    public int compareTo(Object other){
+        Ball otherBall = (Ball) other;
+        if(this.brightness < otherBall.brightness){
+        return -1;
+        } else {
+            return 1;
         }
     }
 
